@@ -11,6 +11,10 @@ const educContent = document.getElementById("educ-content");
 
 const divContent = document.getElementById("div-content");
 
+const sideMenu = document.getElementById("side-menu");
+const openMenu = document.getElementById("open-menu");
+const closeMenu = document.getElementById("close-menu");
+
 const tabContents = {
 Skills: [
   {title: "Développement web", example: "HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python"},
@@ -89,3 +93,39 @@ if (index === 2) {
 })
 
 
+
+const openSideMenu = () => {
+  sideMenu.style.right = "0";
+}
+
+const closeSideMenu = () => {
+  sideMenu.style.right = "-250px";
+}
+
+openMenu.addEventListener("click", openSideMenu);
+closeMenu.addEventListener("click", closeSideMenu);
+
+// Form Google Sheets
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxKDA29BFn78f-5JqbADc3RIVGC6FQZHNWyM5n6W3th9e5XFSBFYkvcfTgew44Kzz0t/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message envoyé avec succès !"
+      setTimeout(function(){
+        msg.innerHTML = ""
+      }, 5000); // Efface le message après 5 secondes
+      form.reset(); // Réinitialise le formulaire
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+
+/*Bien vérifier dans le code de "extension > apps script" du google sheet, que var sheetName = 'Feuille 1' 
+et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
+
+// Fin Form Google Sheets
