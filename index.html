@@ -13,17 +13,19 @@
       <div class="container">
         <nav>
             <img src="images/logo.png" alt="Logo" class="logo" />
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">A propos de moi</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">A propos de moi</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="close-menu"></i>
             </ul>
+            <i class="fa-solid fa-bars" id="open-menu"></i>
         </nav>
         <div class="header-text">
-            <p>Développeur front-end / UI/UX Designer</p>
-            <h1>Je suis <span>Gendrick</span><br>dev front & graph</h1>
+            <p>Développeur front-end / Graphiste</p>
+            <h1>Je suis <span>gendrick</span><br>dev front & graph</h1>
         </div>
        </div>
     </div>
@@ -32,7 +34,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg" alt="user">
+                <img src="images/ui_face.jpg" alt="user">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">A propos de moi</h1>
@@ -121,7 +123,7 @@
 
     <!-----------contact--------->
     
-    <div class="contact">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -136,12 +138,13 @@
                 <a href="images/mon_cv.pdf" download class="btn btn-2">Télécharger CV</a>  
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Nom" placeholder="Votre Nom" required>
                         <input type="email" name="Email" placeholder="Votre Email" required>
                         <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
                         <button type="submit" class="btn btn-2">Envoyer</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -150,12 +153,17 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    
+
+
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
 
 
-<!--- code------>
+<!--- code inutilisé------>
 
 <!------
                 <div class="tab-contents" id="skills">
