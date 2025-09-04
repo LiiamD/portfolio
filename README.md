@@ -1,4 +1,4 @@
-# 🌐 Portfolio - Gendrick
+# 🌐 Portfolio - Liamine
 
 Ce projet est un **portfolio personnel** développé en **HTML, CSS et JavaScript**.  
 Il a pour but de présenter mes compétences, expériences, formations et projets de manière claire et visuelle.  
