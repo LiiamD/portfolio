@@ -143,7 +143,7 @@ nav ul li a:hover::after {
     transition: 0.5s;
 }
 
-.tab-links.active-link::after {
+.tab-links:hover::after {
     width: 50%;
 }
 
@@ -477,6 +477,7 @@ nav ul .fa-solid {
     margin-top: -40px;
     display: block;
 }
+
 
 
 
