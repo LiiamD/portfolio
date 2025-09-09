@@ -9,8 +9,9 @@ Il a pour but de présenter mes compétences, expériences, formations et projet
 
 - **Navigation claire** avec menu en haut de page  
 - **Section "À propos"** interactive avec des onglets (Compétences / Expériences / Formations)  
+- **Liste de services** avec effets de survol
 - **Liste de services** avec effets de survol  
-- **Portfolio** avec animations au hover (zoom image + overlay)  
+- **Projets de dévelopemment** et **Portfolio** avec animations au hover (zoom image + overlay)  
 - **Formulaire de contact** stylisé et responsive  
 - **Responsive design** adapté aux mobiles et tablettes  
 
