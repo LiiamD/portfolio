@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    
+   
+
 }
 
 html {
@@ -118,7 +121,7 @@ nav ul li a:hover::after {
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 5px 0 40px; /*anciennement 20 au lieu de 5 */
 }
 
 .tab-links {
@@ -157,11 +160,6 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/*
-.tab-contents.active-tab {
-    display: block;
-}
-    */
 
     /*-------------services---------------*/
 #services {
@@ -179,7 +177,6 @@ nav ul li a:hover::after {
     background: #1e1e1e;
     border-radius: 10px;
     padding: 40px;
-    /*text-align: center;*/
     transition: background 0.5s, transform 0.3s;
     font-size: 13px;
     font-weight: 300;
@@ -216,17 +213,32 @@ margin-bottom: 30px;
     padding: 50px 0;
 }
 
-.work-list {
+.work-list, .more-list, .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);   
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work {
+
+
+.work, .project {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+
+.project {
+    height: 70vh;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s; /*animation zoom image*/
 }
 
 .work img {
@@ -281,6 +293,14 @@ margin-bottom: 30px;
     height: 100%; /*afficher la layer au hover*/
 }
 
+.project:hover img {
+   transform: scale(1.1); /*zoom image au hover*/
+}
+
+.project:hover .layer {
+    height: 100%; /*afficher la layer au hover*/
+}
+
 .btn {
     display: block;
     background: #ff004f;
@@ -292,6 +312,7 @@ margin-bottom: 30px;
     width: fit-content;
     border: 1px solid #ff004f;
     transition: background 0.5s; /*animation btn au hover*/
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -343,39 +364,6 @@ margin-bottom: 30px;
         width: 100%;
      }
 
-     /*
-     form input, form textarea {
-        width: 100%;
-        background: #1e1e1e;
-        border: none;
-        padding: 15px;
-        margin-bottom: 20px;
-        color: #fff;
-        border-radius: 5px;
-        font-family: "Poppins", sans-serif;
-        font-size: 14px;
-     }
-        */
-    
-        /*
-        form input, form textarea {
-            width: 100%;
-            background: #1e1e1e;
-            border: none;
-            padding: 15px;
-            margin-bottom: 20px;
-            color: #fff;
-            border-radius: 5px;
-            font-family: "Poppins", sans-serif;
-            font-size: 14px;
-            transition: box-shadow 0.5s;
-         }
-
-         form input:focus, form textarea:focus {
-            box-shadow: 0 0 5px #ff004f;
-            outline: none;
-         }
-            */
 
             form input, form textarea {
                 width: 100%;
@@ -411,44 +399,6 @@ nav .fa-solid {
     display: none;
 }
 
-
-
-/*
-@media (max-width: 768px) {
-    .header-text {
-        font-size: 20px;
-        margin-top: 40%;
-    }
-
-    .header-text h1 {
-        font-size: 40px;
-    }
-
-    nav ul {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-        margin-bottom: 40px;
-    }
-
-    #contact-left, #contact-right {
-        flex-basis: 100%;
-        margin-bottom: 40px;
-    }
-}
-    */
 
 @media only screen and (max-width: 700px) {
     #header {
