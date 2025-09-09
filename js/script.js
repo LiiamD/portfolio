@@ -94,19 +94,19 @@ const linkWork = {
   {
     name: "PokéDex",
     img: "images/dev/pokedex.png",
-    type: "Projet Personnel",
+    type: "Application de recherche de Pokémon par nom ou ID qui affiche leurs informations (images, types, bases, stats) en utilisant le proxy PokéAPI. ",
     url: "https://codepen.io/LiiamD/full/raObxGv",
   },
   {
-    name: "palindrome",
+    name: "Palindrome Checker",
     img: "images/dev/palindrome_checker.png",
-    type: "Projet Personnel",
+    type: "Mini-application qui vérifie si une chaîne de caractères (string) est un palindrome (ex : « kayak). Manipulation de chaîne de caractères (.replace(), .toLowerCase(), etc), utilisation de regex (regular expression) et logique conditionnelle.",
     url: "https://codepen.io/LiiamD/full/zxvXrWJ",
   },
   {
     name: "react calculator",
     img: "images/dev/react_calculator.png",
-    type: "Projet Personnel",
+    type: "Calculatrice qui permet d’additionner, de soustraire, de multiplier et de diviser des nombres entiers et décimaux. Gestion de l’état avec React et d’une logique de calcul. ",
     url: "https://codepen.io/LiiamD/full/bNNYgoM",
   }
   ],
@@ -114,73 +114,73 @@ const linkWork = {
   {
     name: "Skweek",
     img: "images/miniat/skweek.png",
-    type: "Identité Visuelle",
+    type: "Identité visuelle et motion design pour Skweek.tv, la plateforme de streaming de Fedcom dédiée au basket-ball européen",
     url: "https://www.behance.net/gallery/168450433/Post-Social-Media-Motion-Skweek"
   },
   {
     name: "Grapes",
     img: "images/miniat/grapes.png",
-    type: "Identité Visuelle",
+    type: "Identité visuelle d'une boisson fruitéepétillante aux extraits de raisin",
     url: "https://www.behance.net/gallery/189302725/Visual-Identity-Grapes-Soda-Can"
   },
   {
     name: "Blabla Pizza",
     img: "images/miniat/blabla_pizza.png",
-    type: "Identité Visuelle",
+    type: "Post pour les réseaux sociaux et motion design dans le thème Pac-Man qui mange la concurrence d'une pizzeria de la chaine de fast-food \"Blabla Pizza\" située à Nîmes",
     url: "https://www.behance.net/gallery/151837229/Post-Social-Media-Motion-Blabla-Pizza-Nmes"
   },
   {
     name: "Les Pingouistes",
     img: "images/miniat/les_pingouistes.jpg",
-    type: "Identité Visuelle",
+    type: "Motion design présentant les personnes et les services de l'agence de communication \"Les Pingouistes\"",
     url: "https://www.behance.net/gallery/141702855/Motion-Les-Pingouistes"
   },
   {
     name: "Tā Energy",
     img: "images/miniat/ta_energy.png",
-    type: "Identité Visuelle",
+    type: "Motion design de la marque de barre énergétique pour les sportifs de haut niveau \"Tā Energy\"",
     url: "https://www.behance.net/gallery/188538119/Post-Social-Media-Motion-Ta-Energy"
   },
   {
     name: "Basic Fit",
     img: "images/miniat/basic_fit.jpg",
-    type: "Identité Visuelle",
+    type: "Motion design et animation 2D pour la chaine de salle de sport \"Basic Fit\"",
     url: "https://www.behance.net/gallery/140781913/Motion-Animation-2D-Basic-Fit"
   },
   {
     name: "Hubside.Store",
     img: "images/miniat/hubside_store.png",
-    type: "Identité Visuelle",
+    type: "Motion design présentant les services de la plateforme \"Hubside.Store\" spécialisée dans la vente, location, reprise, reconditionnement et réparation des appareils connectés",
     url: "https://www.behance.net/gallery/135969227/Motion-HubsideStore"
   },
   {
     name: "Cikaba",
     img: "images/miniat/cikaba.png",
-    type: "Identité Visuelle",
+    type: "Identité Visuelle et motion design pour la plateforme \"Cikaba\" spécialisée dans les solutions digitales QHSE pour les entreprises",
     url: "https://www.behance.net/gallery/178886761/Project-management-Motion-Cikaba"
   },
   {
     name: "Bricks.co",
     img: "images/miniat/bricks.png",
-    type: "Identité Visuelle",
+    type: "Motion design pour la plateforme d'investissement immobilier \"Bricks.co\"",
     url: "https://www.behance.net/gallery/155706643/Motion-Bricksco"
   },
   {
     name: "Le Tour de Mericq en 80 jours",
     img: "images/miniat/groupe_mericq.png",
-    type: "Identité Visuelle",
+    type: "Motion design pour les réseaux sociaux du Groupe Mericq, spécialiste dans l'achat et revente de produits de la mer, présentant chaque entrepôt du groupe partout en France",
     url: "https://www.behance.net/gallery/150537997/PROJET-MOTION-MERICQ-Tour-MERICQ-en-80-Jours"
   },
   {
     name: "100% Radio",
     img: "images/miniat/100_radio.png",
-    type: "Identité Visuelle",
+    type: "Motion design pour la radio locale \"100% Radio\"",
     url: "https://www.behance.net/gallery/150540007/Motion-SAS-Tydo-100-Radio"
   },
   {
     name: "INCO Green",
     img: "images/miniat/inco_green.png",
-    type: "Identité Visuelle",
+    type: "Support print de la campagne de sensibilisation au développement durable \"Get into Green\" organisée par INCO",
     url: "https://www.behance.net/gallery/134296419/Print-Flyer-INCO-GET-INTO-GREEN"
   }
 ]
@@ -331,4 +331,3 @@ form.addEventListener("submit", (e) => {
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
 
 // Fin Form Google Sheets
-
