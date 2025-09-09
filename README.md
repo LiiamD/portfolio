@@ -34,12 +34,5 @@ Il a pour but de présenter mes compétences, expériences, formations et projet
 
 ---
 
-## 📄 Licence
-
-Ce projet est sous licence **MIT**.  
-Vous êtes libre de l’utiliser, le modifier et le partager avec attribution.  
-
----
-
 👑 Fait avec passion par **Liamine**  
 
