@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">"
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title> Portfolio</title>
-    <script src="https://kit.fontawesome.com/1d4edf0a65.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/> 
+        <script src="https://kit.fontawesome.com/1d4edf0a65.js" crossorigin="anonymous"></script> 
+   
+
 </head>
 <body>
     <div id="header">
@@ -17,6 +20,7 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">A propos de moi</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#project-dev">Projets de développement</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" id="close-menu"></i>
@@ -65,26 +69,69 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Front-end</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse</p>
-                <a href="#">Learn more</a>
+                <p>
+        Création d’interfaces web modernes, responsives et optimisées. 
+        Maîtrise de <strong>HTML/CSS</strong>, <strong>JavaScript</strong> et <strong>React</strong>, 
+        avec intégration d’APIs et de bibliothèques pour offrir des sites performants et intuitifs.
+    </p>
+
+                <a href="https://github.com/LiiamD" target="_blank">En savoir plus</a>
             </div>
 
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>Graphic design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse</p>
-                <a href="#">Learn more</a>
+                <p>
+        Conception graphique et animations visuelles pour valoriser vos projets. 
+        Alliant <strong>UI/UX design</strong> et <strong>motion design</strong>, 
+        je crée des visuels impactants et adaptés à une expérience utilisateur fluide et engageante.
+    </p>
+                <a href="https://www.behance.net/liaminedjellali" target="_blank">En savoir plus</a>
             </div>
 
-            <div>
-                <i class="fa-solid fa-spiral"></i>
-                <h2>Motion Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse</p>
-                <a href="#">Learn more</a>
-            </div>
+            
 
          </div>
        </div>
+    </div>
+
+    <!--------- project dev ----->
+    <div id="project-dev">
+        <div class="container">
+            <h1 class="sub-title">Mes Projets de Développement</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/dev/cash_register.png" alt="cash register">
+                    <div class="layer">
+                    <h3>Cash Register</h3>
+                    <p>Description du projet...</p>
+                    <a href="https://codepen.io/LiiamD/full/raObxYv" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/dev/gendrick.png" alt="gendrick">
+                    <div class="layer">
+                    <h3>The Legend of Gendrick</h3>
+                    <p>Description du projet...</p>
+                    <a href="https://codepen.io/LiiamD/full/QwjPyVM" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>               
+                
+                <div class="project">
+                    <img src="images/dev/markdown_previewer.png" alt="weather app">
+                    <div class="layer">
+                    <h3>Markdown Previewer</h3>
+                    <p>Description du projet...</p>
+                    <a href="https://codepen.io/LiiamD/full/XJJrNoV" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+            </div>
+        </div>
+        <div id="more-project" class="more-project more-list"></div>
+            
+            <button type="button" id="more-proj-btn" class="btn more-btn">Voir plus</button>
+     </div>
     </div>
 
     <!-----------portfolio--------->
@@ -93,31 +140,35 @@
             <h1 class="sub-title">Mon Portfolio</h1>
             <div class="work-list">
                 <div class="work">
-                    <image src="images/e_shop.png" alt="e shop">
+                    <img src="images/miniat/e_shop.png" alt="e shop">
                         <div class="layer">
                             <h3>E-Shop</h3>
                             <p>Site de e-commerce</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://www.behance.net/gallery/153811257/Homepage-site-e-commerce-E-SHOPCOM" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                 </div>
                 <div class="work">
-                    <image src="images/miamz_pizza.png" alt="miamz pizza">
+                    <img src="images/miniat/miamz_pizza.png" alt="miamz pizza">
                         <div class="layer">
                         <h3>Miam'z Pizza</h3>
                             <p>Pizza italienne authentique basé à New York</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://www.behance.net/gallery/190931161/Visual-Identity-motion-MiamZ-Pizza" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                         </div>
                 <div class="work">
-                    <image src="images/mercurio.png" alt="mercurio">
+                    <img src="images/miniat/mercurio.png" alt="mercurio">
                         <div class="layer">
                         <h3>Mercurio</h3>
                             <p>Identité Visuelle</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://www.behance.net/gallery/143740459/Visual-Identity-motion-Mercurio" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                          </div>
                         </div>
+                
             </div>
-            <a href="#" class="btn">Voir plus</a>
+
+            <div id="more-work" class="more-work more-list"></div>
+            
+            <button type="button" id="more-btn" class="btn more-btn">Voir plus</button>
         </div>
     </div>
 
@@ -161,30 +212,3 @@
 
 </body>
 </html>
-
-
-<!--- code inutilisé------>
-
-<!------
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Design Web App/App interfaces</li>
-                        <li><span>Dev Web</span><br>front-end developpement</li>
-                        <li><span>Motion Design</span><br>Animation graphics</li>
-                    </ul>
-                </div>
-                          <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>06/2022 - 09/2022</span><br>Groupe Mericq</li>
-                        <li><span>07/2021 - 12/2021</span><br>INCO</li>
-                        <li><span>07/2020 - 09/2022</span><br>Campus Carlone</li>
-                    </ul>
-                </div>
-                          <div class="tab-contents" id="formation">
-                    <ul>
-                        <li><span>2019 - 2021</span><br>Master Management Image Jeu vidéo Créativité</li>
-                        <li><span>2016 - 2019</span><br>Licence Arts Plastiques</li>
-                        <li><span>2016</span><br>Bac S</li>
-                    </ul>
-                </div>
-                ----->
