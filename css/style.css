@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    
-   
-
 }
 
 html {
@@ -15,6 +11,7 @@ html {
 body {
     background: #080808;
     color: #fff;
+    font-family: "Poppins", sans-serif;
 }
 
 #header {
@@ -477,6 +474,7 @@ nav ul .fa-solid {
     margin-top: -40px;
     display: block;
 }
+
 
 
 
