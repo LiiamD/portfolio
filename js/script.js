@@ -188,7 +188,7 @@ const linkWork = {
 
 
 
-
+tabLinks[0].style.color = "#ff4c60"; // couleur initale onglet actif Compétences
 
 // tabs skills, experiences, education
 tabLinks.forEach((link, index) => {
@@ -211,6 +211,9 @@ tabLinks.forEach((link, index) => {
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
 `;
+      link.style.color = "#ff4c60";
+      expLink.style.color = "#ababab";
+      educLink.style.color = "#ababab";
     }
 
     if (index === 1) {
@@ -220,6 +223,9 @@ tabLinks.forEach((link, index) => {
       <li><span>07/2020 - 09/2022</span><br>Campus Carlone</li>
  </ul>
 `;
+      link.style.color = "#ff4c60";
+      skillLink.style.color = "#ababab";
+      educLink.style.color = "#ababab";
     }
 
     if (index === 2) {
@@ -229,6 +235,9 @@ tabLinks.forEach((link, index) => {
      <li><span>2016</span><br>Bac S</li>
 </ul>
 `;
+      link.style.color = "#ff4c60";
+      skillLink.style.color = "#ababab";
+      expLink.style.color = "#ababab";
     }
   });
 });
@@ -331,3 +340,4 @@ form.addEventListener("submit", (e) => {
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
 
 // Fin Form Google Sheets
+
