@@ -24,13 +24,13 @@ const linkWork = {
     name: "PokéDex",
     img: "images/dev/pokedex.png",
     type: "Application de recherche de Pokémon par nom ou ID qui affiche leurs informations (images, types, bases, stats) en utilisant le proxy PokéAPI. ",
-    url: "https://codepen.io/LiiamD/full/raObxGv",
+    url: "https://liiamd.github.io/the-pokemon-search-app/",
   },
   {
     name: "Palindrome Checker",
     img: "images/dev/palindrome_checker.png",
     type: "Mini-application qui vérifie si une chaîne de caractères (string) est un palindrome (ex : « kayak). Manipulation de chaîne de caractères (.replace(), .toLowerCase(), etc), utilisation de regex (regular expression) et logique conditionnelle.",
-    url: "https://codepen.io/LiiamD/full/zxvXrWJ",
+    url: "https://liiamd.github.io/the-palindrome-test/",
   },
   {
     name: "react calculator",
