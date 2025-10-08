@@ -27,10 +27,10 @@ const linkWork = {
     url: "https://liiamd.github.io/the-pokemon-search-app/",
   },
   {
-    name: "Palindrome Checker",
+    name: "React Palindrome Checker",
     img: "images/dev/palindrome_checker.png",
-    type: "Mini-application qui vérifie si une chaîne de caractères (string) est un palindrome (ex : « kayak). Manipulation de chaîne de caractères (.replace(), .toLowerCase(), etc), utilisation de regex (regular expression) et logique conditionnelle.",
-    url: "https://liiamd.github.io/the-palindrome-test/",
+    type: "Mini-application en React.js qui vérifie si une chaîne de caractères (string) est un palindrome (ex : « kayak). Manipulation de chaîne de caractères (.replace(), .toLowerCase(), etc), utilisation de regex (regular expression) et logique conditionnelle.",
+    url: "https://liiamd.github.io/react-palindrome-checker/",
   },
   {
     name: "react calculator",
@@ -308,5 +308,6 @@ form.addEventListener("submit", (e) => {
 
 /*Bien vérifier dans le code de "extension > apps script" du google sheet, que var sheetName = 'Feuille 1' 
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
+
 
 
