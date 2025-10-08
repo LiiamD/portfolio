@@ -33,7 +33,7 @@ const linkWork = {
     url: "https://liiamd.github.io/react-palindrome-checker/",
   },
   {
-    name: "react calculator",
+    name: "React Calculator",
     img: "images/dev/react_calculator.png",
     type: "Calculatrice qui permet d’additionner, de soustraire, de multiplier et de diviser des nombres entiers et décimaux. Gestion de l’état avec React et d’une logique de calcul. ",
     url: "https://codepen.io/LiiamD/full/bNNYgoM",
@@ -139,7 +139,7 @@ tabLinks.forEach((link, index) => {
     if (index === 0) {
       divContent.innerHTML = `<ul class="skills-list">
   <li><span>Développement web</span><br>HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python</li>
-  <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
+  <li><span>Outils & Environnements de développement</span><br>Git, GitHub, Terminal, Docker, VS Code, Node.js, Appwrite (auth, DB, serverless)</li>
   <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</li>
   <li><span>Soft Skills</span><br>Autonome, créatif, méthodique, esprit d'équipe</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
@@ -308,6 +308,7 @@ form.addEventListener("submit", (e) => {
 
 /*Bien vérifier dans le code de "extension > apps script" du google sheet, que var sheetName = 'Feuille 1' 
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
+
 
 
 
