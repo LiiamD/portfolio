@@ -142,7 +142,7 @@ tabLinks.forEach((link, index) => {
   <li><span>Développement web</span><br>HTML/CSS, Tailwind CSS, JavaScript, React, Redux, Sass, Bootstrap, Python, Swift / SwiftUI</li>
   <li><span>Outils & Environnements de développement</span><br>Git, GitHub, VS Code, Xcode (Apple), Terminal, Docker, Node.js, Appwrite (BaaS)</li>
   <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
-  <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
+  <li><span>Outils de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
   <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
