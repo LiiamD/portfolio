@@ -33,10 +33,10 @@ const linkWork = {
     url: "https://liiamd.github.io/react-palindrome-checker/",
   },
   {
-    name: "React Calculator",
-    img: "images/dev/react_calculator.png",
-    type: "Calculatrice qui permet d’additionner, de soustraire, de multiplier et de diviser des nombres entiers et décimaux. Gestion de l’état avec React et d’une logique de calcul. ",
-    url: "https://codepen.io/LiiamD/full/bNNYgoM",
+    name: "The Legend of Gendrick",
+    img: "images/dev/gendrick.png",
+    type: "Un jeu de rôle (RPG) entièrement basé sur du JavaScript pour pratiquer la logique et les structures de données. Jeu dans lequel le joueur peut se déplacer entre différents lieux, acheter des objets ou de la santé, combattre des monstres et gérer ses ressources comme l’or, la santé, l’expérience et l’inventaire. Manipulation du DOM, gestion des événements (.addEventListener()), utilisation de boucles et de conditions, etc.",
+    url: "https://liiamd.github.io/The-Legend-of-Gendrick/",
   }
   ],
   portfolio: [
@@ -123,9 +123,10 @@ tabLinks[0].style.color = "#ff4c60"; // couleur initale onglet actif Compétence
 tabLinks.forEach((link, index) => {
   divContent.innerHTML = `<ul class="skills-list">
   <li><span>Développement web</span><br>HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python</li>
+  <li><span>Outils & Environnements de développement</span><br>Git, GitHub, VS Code, Xcode (Apple), Terminal, Docker, Node.js, Appwrite (BaaS)</li>
+  <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
   <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
-  <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</li>
-  <li><span>Soft Skills</span><br>Autonome, créatif, méthodique, esprit d'équipe</li>
+  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
 `;
@@ -139,9 +140,10 @@ tabLinks.forEach((link, index) => {
     if (index === 0) {
       divContent.innerHTML = `<ul class="skills-list">
   <li><span>Développement web</span><br>HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python</li>
-  <li><span>Outils & Environnements de développement</span><br>Git, GitHub, Terminal, Docker, VS Code, Node.js, Appwrite (auth, DB, serverless)</li>
-  <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</li>
-  <li><span>Soft Skills</span><br>Autonome, créatif, méthodique, esprit d'équipe</li>
+  <li><span>Outils & Environnements de développement</span><br>Git, GitHub, VS Code, Xcode (Apple), Terminal, Docker, Node.js, Appwrite (BaaS)</li>
+  <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
+  <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
+  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
 `;
@@ -155,6 +157,17 @@ educLink.style.color = "#ababab";
     if (index === 1) {
       divContent.innerHTML = `
 <ul>
+  <li>
+    <span>Graphiste Multimédia & Développeur Web</span><br>
+    Groupe Mericq - Estillac (47)<br>
+    Depuis 09/2022
+    <ul>
+      <li class="bullet-point">Communication visuelle.</li>
+      <li class="bullet-point">Design de logos et motion design.</li>
+      <li class="bullet-point">Création de site web et UI/UX.</li>
+    </ul>
+  </li>
+  <div class="divider"></div>
   <li>
     <span>Graphiste (Motion Designer)</span><br>
     Groupe Mericq - Estillac (47)<br>
@@ -199,7 +212,8 @@ educLink.style.color = "#ababab";
 
     if (index === 2) {
       divContent.innerHTML = `<ul>
-      <li><span>2024 - en cours</span><br>Autoformation Développeur Web</li>
+      <li><span>10/2025 - 11/2025</span><br>Apple Foundation Program</li>
+      <li><span>09/2024 - 10/2025</span><br>Autoformation Développeur Web</li>
      <li><span>2019 - 2021</span><br>Master Management Image Jeu vidéo Créativité</li>
      <li><span>2016 - 2019</span><br>Licence Arts Plastiques</li>
      <li><span>2016</span><br>Bac S</li>
