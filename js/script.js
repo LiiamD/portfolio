@@ -122,11 +122,11 @@ tabLinks[0].style.color = "#ff4c60"; // couleur initale onglet actif Compétence
 // tabs skills, experiences, education
 tabLinks.forEach((link, index) => {
   divContent.innerHTML = `<ul class="skills-list">
-  <li><span>Développement web</span><br>HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python</li>
+  <li><span>Développement web</span><br>HTML/CSS, Tailwind CSS, JavaScript, React, Redux, Sass, Bootstrap, Python, Swift / SwiftUI</li>
   <li><span>Outils & Environnements de développement</span><br>Git, GitHub, VS Code, Xcode (Apple), Terminal, Docker, Node.js, Appwrite (BaaS)</li>
+  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
   <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
-  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
 `;
@@ -139,11 +139,11 @@ tabLinks.forEach((link, index) => {
   link.addEventListener("click", () => {
     if (index === 0) {
       divContent.innerHTML = `<ul class="skills-list">
-  <li><span>Développement web</span><br>HTML/CSS, JavaScript, React, Redux, jQuery, Sass, Bootstrap, D3.js, Python</li>
+  <li><span>Développement web</span><br>HTML/CSS, Tailwind CSS, JavaScript, React, Redux, Sass, Bootstrap, Python, Swift / SwiftUI</li>
   <li><span>Outils & Environnements de développement</span><br>Git, GitHub, VS Code, Xcode (Apple), Terminal, Docker, Node.js, Appwrite (BaaS)</li>
+  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Outil de design</span><br>Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Figma, Blender</li>
   <li><span>Bureautique</span><br>Word, Excel, OneNote, Outlook, PowerPoint, Google Docs, Google Slides, Acrobat</li>
-  <li><span>Soft Skills</span><br>Autonome, créatif, rigoureux, esprit d’équipe</li>
   <li><span>Langues</span><br>Français (Langue maternelle) / Anglais (B2)</li>
 </ul>
 `;
@@ -159,7 +159,7 @@ educLink.style.color = "#ababab";
 <ul>
   <li>
     <span>Graphiste Multimédia & Développeur Web</span><br>
-    Groupe Mericq - Estillac (47)<br>
+    Freelance<br>
     Depuis 09/2022
     <ul>
       <li class="bullet-point">Communication visuelle.</li>
