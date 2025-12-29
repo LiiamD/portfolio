@@ -122,26 +122,42 @@ let moreDisplay = false;
 
  // Logique pour afficher plus de travaux
 moreBtn.addEventListener("click", () => {
- 
-  if (moreDisplay === false) {
+  moreDisplay = !moreDisplay;
+
+  if (moreDisplay) {
     moreBtn.innerText = "Voir moins";
-    moreDisplay = true;
-    linkWork.portfolio.forEach((work) => {
-      moreWork.innerHTML += `
-      <div class="work">
-        <img src="${work.img}" alt="${work.name}">
-        <div class="layer">
-          <h3>${work.name}</h3>
-          <p>${work.type}</p>
-          <a href="${work.url}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      `;
+
+    // Injecte le contenu UNE SEULE FOIS
+    if (moreWork.innerHTML === "") {
+      linkWork.portfolio.forEach((work) => {
+        moreWork.innerHTML += `
+          <div class="work">
+            <img src="${work.img}" alt="${work.name}">
+            <div class="layer">
+              <h3>${work.name}</h3>
+              <p>${work.type}</p>
+              <a href="${work.url}" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    // Laisse le DOM respirer avant l’animation
+    requestAnimationFrame(() => {
+      moreWork.classList.add("active");
     });
+
   } else {
     moreBtn.innerText = "Voir plus";
-    moreDisplay = false;
-    moreWork.innerHTML = "";
+    moreWork.classList.remove("active");
+
+    // Supprime le contenu APRÈS la transition
+    setTimeout(() => {
+      moreWork.innerHTML = "";
+    }, 900); // doit matcher le CSS
   }
 });
 
@@ -150,29 +166,41 @@ moreBtn.addEventListener("click", () => {
 let moreProjDisplay = false;  
   // Logique pour afficher plus de projets
 moreProjBtn.addEventListener("click", () => {
+  moreProjDisplay = !moreProjDisplay;
 
-  if (moreProjDisplay === false) {
+  if (moreProjDisplay) {
     moreProjBtn.innerText = "Voir moins";
-    moreProjDisplay = true;
-    linkWork.projects.forEach((proj) => {
-      moreProj.innerHTML += `
-      <div class="project">
-        <img src="${proj.img}" alt="${proj.name}">
-        <div class="layer">
-          <h3>${proj.name}</h3>
-          <p>${proj.type}</p>
-          <a href="${proj.url}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      `;
+
+    if (moreProj.innerHTML === "") {
+      linkWork.projects.forEach((proj) => {
+        moreProj.innerHTML += `
+          <div class="project">
+            <img src="${proj.img}" alt="${proj.name}">
+            <div class="layer">
+              <h3>${proj.name}</h3>
+              <p>${proj.type}</p>
+              <a href="${proj.url}" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    requestAnimationFrame(() => {
+      moreProj.classList.add("active");
     });
+
   } else {
     moreProjBtn.innerText = "Voir plus";
-    moreProjDisplay = false;
-    moreProj.innerHTML = "";
+    moreProj.classList.remove("active");
+
+    setTimeout(() => {
+      moreProj.innerHTML = "";
+    }, 900);
   }
 });
-
 
 
 // side menu responsive
