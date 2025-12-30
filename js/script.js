@@ -49,7 +49,7 @@ const linkWork = {
   {
     name: "Grapes",
     img: "images/miniat/grapes.png",
-    type: "Identité visuelle d'une boisson fruitéepétillante aux extraits de raisin",
+    type: "Identité visuelle d'une boisson fruitée et pétillante aux extraits de raisin",
     url: "https://www.behance.net/gallery/189302725/Visual-Identity-Grapes-Soda-Can"
   },
   {
@@ -238,6 +238,7 @@ form.addEventListener("submit", (e) => {
 
 /*Bien vérifier dans le code de "extension > apps script" du google sheet, que var sheetName = 'Feuille 1' 
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
+
 
 
 
