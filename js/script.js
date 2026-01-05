@@ -205,11 +205,14 @@ moreProjBtn.addEventListener("click", () => {
 
 // side menu responsive
 const openSideMenu = () => {
-  sideMenu.style.right = "0";
+  sideMenu.style.display = "block";
+  sideMenu.style.opacity = "1";
+
 };
 
 const closeSideMenu = () => {
-  sideMenu.style.right = "-250px";
+  sideMenu.style.display = "none";
+  sideMenu.style.opacity = "0";
 };
 
 openMenu.addEventListener("click", openSideMenu);
@@ -238,6 +241,7 @@ form.addEventListener("submit", (e) => {
 
 /*Bien vérifier dans le code de "extension > apps script" du google sheet, que var sheetName = 'Feuille 1' 
 et non pas var sheetName = 'Sheet1' pour que cela fonctionne bien */
+
 
 
 
