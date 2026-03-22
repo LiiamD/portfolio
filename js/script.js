@@ -23,19 +23,19 @@ const linkWork = {
   {
     name: "PokéDex",
     img: "images/dev/pokedex.png",
-    type: "Application de recherche de Pokémon par nom ou ID qui affiche leurs informations (images, types, bases, stats) en utilisant le proxy PokéAPI. ",
+    type: "Application de recherche de Pokémon par nom ou ID qui affiche leurs informations en utilisant le proxy PokéAPI.",
     url: "https://liiamd.github.io/the-pokemon-search-app/",
   },
   {
     name: "React Palindrome Checker",
     img: "images/dev/palindrome_checker.png",
-    type: "Mini-application en React.js qui vérifie si une chaîne de caractères (string) est un palindrome (ex : « kayak). Manipulation de chaîne de caractères (.replace(), .toLowerCase(), etc), utilisation de regex (regular expression) et logique conditionnelle.",
+    type: "Mini-application en React qui vérifie si une chaîne de caractères est un palindrome.",
     url: "https://liiamd.github.io/react-palindrome-checker/",
   },
   {
     name: "The Legend of Gendrick",
     img: "images/dev/gendrick.png",
-    type: "Un jeu de rôle (RPG) entièrement basé sur du JavaScript pour pratiquer la logique et les structures de données. Jeu dans lequel le joueur peut se déplacer entre différents lieux, acheter des objets ou de la santé, combattre des monstres et gérer ses ressources comme l’or, la santé, l’expérience et l’inventaire. Manipulation du DOM, gestion des événements (.addEventListener()), utilisation de boucles et de conditions, etc.",
+    type: "Jeu de rôle (RPG) en JavaScript où le joueur doit renverser le Roi Usurpateur. Ce projet m’a permis de travailler la logique, les structures de données et la manipulation du DOM.",
     url: "https://liiamd.github.io/The-Legend-of-Gendrick/",
   }
   ],
