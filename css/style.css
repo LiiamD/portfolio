@@ -570,7 +570,7 @@ nav ul.active {
   background-color: #ffffff;      /* couleur du menu */
   display: flex;            /* ou block si tu préfères */
   flex-direction: column;
-  padding-top: 100%;        /* espace pour le burger / close */
+  padding-top: 50%;        /* espace pour le burger / close */
   transition: opacity 0.3s ease;
 }
 
