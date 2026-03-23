@@ -18,6 +18,29 @@ const sideMenu = document.getElementById("side-menu");
 const openMenu = document.getElementById("open-menu");
 const closeMenu = document.getElementById("close-menu");
 
+if (sideMenu && openMenu && closeMenu) {
+  const openSideMenu = () => {
+    sideMenu.classList.add("active");
+    document.body.classList.add("no-scroll");
+  };
+
+  const closeSideMenu = () => {
+    sideMenu.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  };
+
+  openMenu.addEventListener("click", openSideMenu);
+  closeMenu.addEventListener("click", closeSideMenu);
+
+  const menuLinks = document.querySelectorAll("#side-menu li a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      sideMenu.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    });
+  });
+}
+
 const linkWork = { 
   projects: [
   {
@@ -35,7 +58,7 @@ const linkWork = {
   {
     name: "The Legend of Gendrick",
     img: "images/dev/gendrick.png",
-    type: "Jeu de rôle (RPG) en JavaScript où le joueur doit renverser le Roi Usurpateur. Ce projet m’a permis de travailler la logique, les structures de données et la manipulation du DOM.",
+    type: "Jeu de rôle (RPG) en JavaScript : combattez des monstres, achetez des objets et préparez-vous à défier le Roi Usurpateur.",
     url: "https://liiamd.github.io/The-Legend-of-Gendrick/",
   }
   ],
@@ -43,49 +66,49 @@ const linkWork = {
   {
     name: "Skweek",
     img: "images/miniat/skweek.png",
-    type: "Identité visuelle et motion design pour Skweek.tv, la plateforme de streaming de Fedcom dédiée au basket-ball européen",
+    type: "Identité visuelle et motion design pour Skweek.tv, la plateforme de streaming de Fedcom dédiée au basket-ball européen.",
     url: "https://www.behance.net/gallery/168450433/Post-Social-Media-Motion-Skweek"
   },
   {
     name: "Grapes",
     img: "images/miniat/grapes.png",
-    type: "Identité visuelle d'une boisson fruitée et pétillante aux extraits de raisin",
+    type: "Identité visuelle d'une boisson fruitée et pétillante aux extraits de raisin.",
     url: "https://www.behance.net/gallery/189302725/Visual-Identity-Grapes-Soda-Can"
   },
   {
     name: "Blabla Pizza",
     img: "images/miniat/blabla_pizza.png",
-    type: "Post pour les réseaux sociaux et motion design dans le thème Pac-Man qui mange la concurrence d'une pizzeria de la chaine de fast-food \"Blabla Pizza\" située à Nîmes",
+    type: "Post pour les réseaux sociaux et motion design Pac-Man dévorant la concurrence pour le \"Blabla Pizza\" située à Nîmes.",
     url: "https://www.behance.net/gallery/151837229/Post-Social-Media-Motion-Blabla-Pizza-Nmes"
   },
   {
     name: "Les Pingouistes",
     img: "images/miniat/les_pingouistes.jpg",
-    type: "Motion design présentant les personnes et les services de l'agence de communication \"Les Pingouistes\"",
+    type: "Motion design présentant les personnes et les services de l'agence de communication \"Les Pingouistes\".",
     url: "https://www.behance.net/gallery/141702855/Motion-Les-Pingouistes"
   },
   {
     name: "Tā Energy",
     img: "images/miniat/ta_energy.png",
-    type: "Motion design de la marque de barre énergétique pour les sportifs de haut niveau \"Tā Energy\"",
+    type: "Motion design de la marque de barre énergétique pour les sportifs de haut niveau \"Tā Energy\".",
     url: "https://www.behance.net/gallery/188538119/Post-Social-Media-Motion-Ta-Energy"
   },
   {
     name: "Basic Fit",
     img: "images/miniat/basic_fit.jpg",
-    type: "Motion design et animation 2D pour la chaine de salle de sport \"Basic Fit\"",
+    type: "Motion design et animation 2D pour la chaine de salle de sport \"Basic Fit\".",
     url: "https://www.behance.net/gallery/140781913/Motion-Animation-2D-Basic-Fit"
   },
   {
     name: "Hubside.Store",
     img: "images/miniat/hubside_store.png",
-    type: "Motion design présentant les services de la plateforme \"Hubside.Store\" spécialisée dans la vente, location, reprise, reconditionnement et réparation des appareils connectés",
+    type: "Motion design présentant Hubside.Store, plateforme pour vendre, louer, reprendre, reconditionner et réparer des appareils connectés.",
     url: "https://www.behance.net/gallery/135969227/Motion-HubsideStore"
   },
   {
     name: "Cikaba",
     img: "images/miniat/cikaba.png",
-    type: "Identité Visuelle et motion design pour la plateforme \"Cikaba\" spécialisée dans les solutions digitales QHSE pour les entreprises",
+    type: "Identité Visuelle et motion design pour \"Cikaba\", spécialisée dans les solutions digitales QHSE pour les entreprises.",
     url: "https://www.behance.net/gallery/178886761/Project-management-Motion-Cikaba"
   },
   {
@@ -97,13 +120,13 @@ const linkWork = {
   {
     name: "Le Tour de Mericq en 80 jours",
     img: "images/miniat/groupe_mericq.png",
-    type: "Motion design pour les réseaux sociaux du Groupe Mericq, spécialiste dans l'achat et revente de produits de la mer, présentant chaque entrepôt du groupe partout en France",
+    type: "Motion design pour le Groupe Mericq, spécialiste de l’achat-revente de produits de la mer, présentant ses entrepôts.",
     url: "https://www.behance.net/gallery/150537997/PROJET-MOTION-MERICQ-Tour-MERICQ-en-80-Jours"
   },
   {
     name: "100% Radio",
     img: "images/miniat/100_radio.png",
-    type: "Motion design pour la radio locale \"100% Radio\"",
+    type: "Motion design pour la radio locale \"100% Radio\".",
     url: "https://www.behance.net/gallery/150540007/Motion-SAS-Tydo-100-Radio"
   },
   {
@@ -203,20 +226,8 @@ moreProjBtn.addEventListener("click", () => {
 });
 
 
-// side menu responsive
-const openSideMenu = () => {
-  sideMenu.style.display = "block";
-  sideMenu.style.opacity = "1";
 
-};
 
-const closeSideMenu = () => {
-  sideMenu.style.display = "none";
-  sideMenu.style.opacity = "0";
-};
-
-openMenu.addEventListener("click", openSideMenu);
-closeMenu.addEventListener("click", closeSideMenu);
 
 
 
